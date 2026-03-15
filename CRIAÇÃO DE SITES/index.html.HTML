@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aline Lima - Doula & Educadora Perinatal</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Paleta de cores aconchegante baseada na imagem anterior
+                        'warm-bg': '#FDF5F0',    // Bege bem claro (fundo principal)
+                        'warm-card': '#FEFDFB',  // Quase branco (fundo dos cards)
+                        'maroon-text': '#5D2424', // Vinho escuro (títulos)
+                        'terra-text': '#A66D5E',  // Terracota (subtítulos)
+                        'body-text': '#73605B',  // Marrom acinzentado (texto corpo)
+                        'btn-maroon': '#8C4343', // Botão vinho
+                        'footer-bg': '#5D2424',  // Fundo footer vinho escuro
+                        'footer-text': '#FDF5F0', // Texto footer claro
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Botão flutuante do WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-warm-bg text-body-text font-sans antialiased overflow-x-hidden">
+
+    <section class="relative pt-12 pb-20 md:pt-16 md:pb-24 overflow-hidden">
+        <div class="absolute inset-0 bg-warm-card opacity-50 -skew-y-3 transform origin-top-left -z-10"></div>
+        
+        <div class="container mx-auto px-6 max-w-7xl flex flex-col items-center">
+            
+            <div class="w-full flex justify-center mb-12 md:mb-16">
+                <div class="relative w-full max-w-4xl aspect-[16/10] md:aspect-[16/9] lg:aspect-[21/9] rounded-3xl overflow-hidden shadow-2xl border-4 border-terra-text border-opacity-30">
+                    <img src="./aline-doula.jpg" 
+                         alt="Aline Lima sorrindo" 
+                         onerror="this.src='https://via.placeholder.com/1200x600?text=Erro+na+Imagem'"
+                         class="w-full h-full object-cover object-center scale-105 hover:scale-100 transition-transform duration-700">
+                    <div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-warm-bg to-transparent"></div>
+                </div>
+            </div>
+
+            <div class="text-center max-w-3xl">
+                <p class="text-base md:text-lg font-medium uppercase tracking-widest text-terra-text mb-4">
+                    Doula & Educadora Perinatal
+                </p>
+                <h1 class="font-serif text-5xl md:text-7xl font-semibold text-maroon-text leading-tight mb-8">
+                    Aline Lima
+                </h1>
+                <p class="text-lg md:text-xl text-body-text leading-relaxed mb-10 opacity-90">
+                    Acolhimento, informação e suporte para uma experiência de parto positiva e transformadora.
+                </p>
+                <a href="https://wa.me/5511948779938?text=Ol%C3%A1%2C%20Aline!%20Gostaria%20de%20saber%20mais%20sobre%20seu%20acompanhamento%20como%20doula." 
+                   target="_blank" 
+                   class="inline-flex items-center gap-2.5 bg-btn-maroon text-white px-10 py-4 rounded-full font-medium hover:opacity-95 transition-opacity shadow-lg text-xl">
+                    <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 bg-warm-card">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <h2 class="font-serif text-4xl md:text-5xl font-semibold text-center text-maroon-text mb-16">
+                Serviços
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                <div class="bg-warm-bg rounded-2xl p-10 text-center shadow-sm border border-terra-text/10 hover:shadow-md transition-shadow flex flex-col items-center">
+                    <div class="w-16 h-16 mb-6 flex items-center justify-center">
+                        <i data-lucide="heart" class="w-12 h-12 text-maroon-text" stroke-width="1.5"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-maroon-text mb-4">
+                        Acompanhamento no Parto
+                    </h3>
+                    <p class="text-base text-body-text leading-relaxed">
+                        Suporte físico e emocional contínuo durante todo o trabalho de parto, garantindo acolhimento e respeito.
+                    </p>
+                </div>
+
+                <div class="bg-warm-bg rounded-2xl p-10 text-center shadow-sm border border-terra-text/10 hover:shadow-md transition-shadow flex flex-col items-center">
+                    <div class="w-16 h-16 mb-6 flex items-center justify-center">
+                        <i data-lucide="baby" class="w-12 h-12 text-maroon-text" stroke-width="1.5"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-maroon-text mb-4">
+                        Consultoria Pós-Parto
+                    </h3>
+                    <p class="text-base text-body-text leading-relaxed">
+                        Auxílio fundamental no puerpério, cuidados com o recém-nascido e estabelecimento da amamentação.
+                    </p>
+                </div>
+
+                <div class="bg-warm-bg rounded-2xl p-10 text-center shadow-sm border border-terra-text/10 hover:shadow-md transition-shadow flex flex-col items-center">
+                    <div class="w-16 h-16 mb-6 flex items-center justify-center">
+                        <i data-lucide="flower-2" class="w-12 h-12 text-maroon-text" stroke-width="1.5"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-maroon-text mb-4">
+                        Educação Perinatal
+                    </h3>
+                    <p class="text-base text-body-text leading-relaxed">
+                        Informação de qualidade para a elaboração do Plano de Parto e preparação para escolhas conscientes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-warm-bg">
+        <div class="container mx-auto px-6 max-w-3xl text-center">
+            <h2 class="font-serif text-4xl font-semibold text-maroon-text mb-6">
+                Sobre
+            </h2>
+            <div class="w-24 h-0.5 bg-terra-text mx-auto mb-12 opacity-60"></div>
+            <p class="text-lg md:text-xl text-body-text leading-relaxed font-light">
+                Sou Aline, tenho 29 anos, sou Doula, educadora perinatal e facilitadora na amamentação. Após o nascimento do meu filho Théo, a doulagem ganhou meu coração. Minha missão é proporcionar às mulheres uma experiência de parto positiva, informada e acolhedora, transformando este momento em algo tão maravilhoso quanto foi o meu. Ver famílias nascerem fortalecidas é o meu objetivo de vida.
+            </p>
+        </div>
+    </section>
+
+    <footer class="py-16 bg-footer-bg text-footer-text">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-serif text-3xl font-semibold mb-10">
+                Aline Lima Doula
+            </h2>
+            
+            <div class="flex items-center justify-center mb-12">
+                <a href="https://instagram.com/doula.alinelima" target="_blank" 
+                   class="inline-flex items-center gap-2.5 bg-btn-maroon text-white px-7 py-3 rounded-full font-medium hover:bg-opacity-80 transition-colors shadow-sm">
+                    <i data-lucide="instagram" class="w-5 h-5"></i>
+                    @doula.alinelima
+                </a>
+            </div>
+            
+            <p class="text-sm opacity-80 font-light">
+                © <span id="year"></span> Aline Lima. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5511948779938?text=Ol%C3%A1%2C%20Aline!%20Gostaria%20de%20saber%20mais%20sobre%20seu%20acompanhamento%20como%20doula." 
+       target="_blank" 
+       class="whatsapp-float"
+       aria-label="Fale comigo no WhatsApp">
+        <svg viewBox="0 0 32 32" class="w-8 h-8 fill-white">
+            <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.905 15.905 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.31 22.612c-.39 1.1-1.932 2.014-3.168 2.28-.846.18-1.95.324-5.67-1.218-4.762-1.972-7.828-6.81-8.066-7.124-.228-.314-1.918-2.554-1.918-4.872s1.214-3.456 1.644-3.928c.43-.472.94-.59 1.254-.59.314 0 .628.004.902.016.29.014.678-.11 1.062.81.39.94 1.332 3.242 1.448 3.478.118.236.196.51.04.824-.158.314-.236.51-.472.786-.236.274-.496.614-.708.824-.236.236-.482.49-.208.962.274.472 1.218 2.01 2.616 3.256 1.796 1.6 3.31 2.096 3.782 2.332.472.236.746.196 1.02-.118.274-.314 1.176-1.372 1.49-1.844.314-.472.628-.392 1.06-.236.432.158 2.734 1.29 3.206 1.526.472.236.786.354.902.55.118.196.118 1.138-.274 2.236z"/>
+        </svg>
+    </a>
+
+    <script>
+        // Inicializa os ícones do Lucide
+        lucide.createIcons();
+        
+        // Define o ano atual automaticamente no rodapé
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
